@@ -1,0 +1,17 @@
+/*
+Theme Name:     NfyntChildCatchBase
+Description:    First!
+Author:         admin
+Template:       catch-base
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+.slideshow_container.slideshow_container_style-dark {
+    float: right;
+    margin: 5px;
+  }
+  
+  .molly_about_text {
+    float: left;
+  }
