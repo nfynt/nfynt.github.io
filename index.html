@@ -124,8 +124,10 @@
               </h4>
               <p>
                  		I am currently pursuing my Master of Research in virtual reality (VR) and computer vision from UCL, and expected to 
-                        complete it by Sept 2020. I have keen interest in developing intelligent immersive applications which includes domain
-                        knowledge of mixed reality, machine vision, and cloud technologies.
+                        complete it by Sept 2020. My current research focus include the processing of real time data and integrating it
+                        with immersive application for monitoring and decision making. I am particularly interested into the acquisition of
+                        industrial data (IoT, livestream, etc) and mapping with geographical information systems and using mixed reality to deliver the
+                        results.
               </p>
               </p>
             </div>
@@ -146,7 +148,7 @@
                 </li>
                 <li>
                   <a href="#contact">
-                             Hire me for your next project
+                             Contact me for your next project
                   </a>
                 </li>
               </ul>
@@ -175,7 +177,7 @@
               <i class="icon-facebook"></i>
                 <div class="item-data">
                   <h3>
-                    <a href="https://www.linkedin.com/shubham-singh-2a26a19a">
+                    <a href="https://www.linkedin.com/in/shubham-singh-2a26a19a/" target="_blank">
                                   Shubham Singh
                     </a>
                   </h3>
@@ -190,7 +192,7 @@
               <i class="icon-twitter"></i>
                 <div class="item-data">
                   <h3>
-                    <a href="https://www.github.com/nfynt">
+                    <a href="https://www.github.com/nfynt" target="_blank">
                          Nfynt
                     </a>
                   </h3>
@@ -294,6 +296,8 @@
             <span class="label label-info">OpenCV</span>
             <span class="label label-info">ICE servers</span>
             <span class="label label-info">Git VCS</span>
+            <span class="label label-info">Socket Prorgamming</span>
+            <span class="label label-info">Networking</span>
           </div>
         </section>
       </div>
@@ -303,50 +307,158 @@
     <!-- Projects Tab Data -->
       <div id="portfolio">
         <section class="clearfix">
-          <table>
-                  <tbody id = "table-body">
-                    <tr>
-                      <td>
                         <div class="project-div">
-                          <div class="image">Project image</div>
-                          <div class="data">Project</div>
+                          <div class="data">
+                            
+                            <h4 style="text-align: center;">FABRIK (C#/Unity/IK/Heatmaps/CG)</h4>
+                            
+                            <div class="image" style="height:380px; object-fit: contain">
+                                <p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/253WHiBrCbY" frameborder="0" 
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</p>
+                            </div>
+								
+                                <p style="text-align:left; font-family:calibri">
+									<a href="https://github.com/nfynt/FABRIK" class="postLink" target="_blank">FABRIK</a>, is an 
+									heuristic iterative algorithm of solving IK. Here I have tried to implement this novel algorithm for 
+                                    solving joint transform for tracking of target object in XZ-plane and identifying each joints configuration in the process. 
+                                    Further with reference from 
+                                    <a href="http://www.academia.edu/9165835/FABRIK_A_fast_iterative_solver_for_the_Inverse_Kinematics_problem" class="postLink" target="_blank">published paper</a> 
+                                    I have implemented few test cases to validate the results. The articulated chain system with 5 links 
+                                    has the link length of 5, 4, 3, 2, 1 respectively and the complete movement is restricted on XZ-plane with allowed rotation 
+                                    of each joint along Y-axis only. The XZ-plane is represented with grid lines which is used to plot/define target position
+                                    which triggers FABRIK algo to calculate joint configuration with respect to defined temporal and permanent constraints of
+                                    angular velocity, swing, and twist.
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										<i>Controls</i>: Orbit camera movement with right click to move around and mouse scroll wheel to zoom in and out of grid.
+                                        Left clicking anywhere on the grid sets new target position.
+									</li>
+                                    <li>
+                                        <i>Constraints</i>: This project implements one temporal constraint of angular velocity and two permanent constraint
+                                        of swing and twist value for each joint.
+                                    </li>
+									<li>
+										<i>Heatmaps</i>: The colour in heatmap varies between shades of “RED” and “GREEN”, where red is for not-reachable 
+                                        positions as opposed to green which represents reachable positions. Also, smaller the size of circle means greater is 
+                                        the accuracy of end-effector to navigate to the point. The visual representation is managed from surface shader applied 
+                                        on the grid plane.
+									</li>
+                                    <li>
+                                        <i>Shader</i>: Generally CG doesn't allow array data types to be passed from unity as parameter and hence custom 
+                                        property is created to receive float4 array in fragment shader.
+                                    </li>
+								</ul>
+                          </div>
+                          
+                          <br><br><hr><br><br>
+
+                         <div class="data">
+                            
+                            <h4 style="text-align: center;">Space Invader (C++/DirectX/VS)</h4>
+                            
+                            <div class="image" style="height:250px; object-fit: contain">
+                                <table>
+                                <tr>
+                                <td>
+                                 <img  src="image/spaceinvader/space_h.JPG" />
+                                 </td>
+                                 <td>
+                                 <img  src="image/spaceinvader/space.PNG" />
+                                 </td>
+                                 <td>
+                                 <img  src="image/spaceinvader/space_c.PNG" />
+                                 </td>
+                                 </tr>
+                                 </table>
+                            </div>
+								
+                                <p style="text-align:left; font-family:calibri">
+									<a href="https://github.com/nfynt/DirectXTest" target="_blank">Space Invader</a>, a personal project which I worked upon to get an understanding of DirectX work flow. It's very small 
+									arcade style space invasion game, where player controls ship and shoots at enemies and asteroids in dark space. The game progresses 
+									from level 1 to 10, where the number and size of asteroids varies along with number of enemy ships. 
+									<br>Once you shoot any asterois it splits into 2 parts, which goes like chain splitting until the size of asteroid is zero.
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										<i>Gameplay</i>: Gameplay and mechanics accouting for behaviour of each components.
+									</li>
+								</ul>
+                          </div>
+                          
+                          <br><br><hr><br><br>
+
+                          <div class="data">
+                            
+                            <h4 style="text-align: center;">Nuspace (C#/C++/Unity/GCP)</h4>
+                            
+                            <div class="image" style="height:400px; object-fit: contain">
+                                <p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YGr2YUXeMT8" frameborder="0" 
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</p>
+                            </div>
+								
+                                <p style="text-align:left; font-family:calibri">
+									<a href="https://www.imaginate.in"  target="_blank">Nuspace</a>, is a SaaS based solution which serves 2 individual product. I have worked on both the products - Atom and Assist. 
+                                    Atom is virtual 3D conferencing with collaboration features such as voice, avatar, 3D environments, etc.
+									Assist is more focused for on demand remote assistance and remote monitoring of operations. In this user can collaborate
+                                    with remote user by Livestreaming, screen sharing, embedded browser, etc. This is specifically targeted for AR devices.
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										<i>Atom</i>: recording and playing back of entire session, the user can record the entire 3D online session and save it locally which 
+										can then be saved to review or reference purpose afterwards.
+									</li>
+									<li>
+										<i>Atom</i>: interactive object update and design tools feature set, that allows the user to interact with dynamically loaded model. 
+									</li>
+									<li>
+										<i>Atom</i>: simulation of evacuation scenario in industrial environment and fluid motion simulation. 
+									</li>
+									<li>
+										<i>Assist</i>: architecting and implementing the entire solution. Extending support for smart wearable devices (Vuzix and Moverio versions).
+									</li>
+									<li>
+										<i>Assist</i>: Live streaming of user stream and broadcasting it to all the other users in current session.
+										The live stream can also be recorded by "Host" and saved/shared in mp4 format.
+									</li>
+								</ul>
+                          </div>
+                          
+                          <br><br><hr><br><br>
+
+                          <div class="data">
+                            
+                            <h4 style="text-align: center;">Distance Measurement(C#/Unity/Spatial Mapping/Hololens)</h4>
+                            
+                            <div class="image" style="height:250px; object-fit: contain">
+                                <p>
+                                    <img width="150" height="200" src="image/holodistance/dist.jpg" />
+                                </p>
+                            </div>
+								
+                                <p style="text-align:left; font-family:calibri"> 
+                                    <a href="https://github.com/nfynt/HololensDistance" target="_blank">HoloDistance</a>, was a POC project where the idea was to 
+									test the accuracy and feasibility of distance measurement using Hololens. The user was able to measure real world distance
+									between two or more consecutive points. So initially the map of current physical space was created using spatial Mapping
+									capability of Hololens and then user plots the point. The distance is measured in meter scale.
+									<br />
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										Testing Spatial mapping capabilities and indentifying shortcomings.
+									</li>
+									<li>
+										The acuracy of meaurement
+									</li>
+								</ul>
+                          </div>
+
+
                         </div>
-                      </td>
-                      <td>
-                        <div class="project-div">
-                          <div class="image">Project image  </div>
-                          <div class="data">Project</div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="project-div">
-                          <div class="image">Project image</div>
-                          <div class="data">Project</div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="project-div">
-                          <div class="image">Project image</div>
-                          <div class="data">Project</div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="project-div">
-                          <div class="image">Project image</div>
-                          <div class="data">Project</div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="project-div">
-                          <div class="image">Project image</div>
-                          <div class="data">Project</div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
         </section>
       </div>
     <!-- End Projects tab -->
