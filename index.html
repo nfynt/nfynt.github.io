@@ -340,6 +340,48 @@
       <div id="portfolio">
         <section class="clearfix">
                         <div class="project-div">
+                        <div class="data">
+                            
+                            <h4 style="text-align: center;">ICP (C++/libigl/eigen/nanoflann/glfw)</h4>
+                            
+                            <div class="image" style="height:600px; object-fit: contain; align:center">
+                                <p>
+                                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+                                    <div class='embed-container'><iframe src='https://www.youtube.com/embed/5xckSNRsamE' frameborder='0' allowfullscreen></iframe></div>
+								</p>
+                            </div>
+								
+                                <p style="text-align:left; font-family:calibri">
+									<a href="https://github.com/nfynt/COMPM080-Tutorials-2020/tree/master/tutorials/1_coding_framework/cpp/3_travel/cw1" class="postLink" target="_blank">ICP</a> (Iterative Closest Point), 
+                                    is an iterative algorithm for aligning/registering two different mesh/point cloud, based on closest euclidean distance between source and target. Here
+                                    I have implemented both the point-to-point and point-to-plane algorithm and made use of KD-Tree to establish pair correspondence from source to target.
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										Transformation of 3D object and implementation of ICP (point-to-point) with optimization to minimize alignment error
+                                        E(R,t) = Σ||(R*pi + t - qi )||^2
+									</li>
+                                    <li>
+                                        Effect of rotation on aligment.
+                                    </li>
+									<li>
+										Perturb mesh with zero-mean Gaussian noise.
+									</li>
+                                    <li>
+                                        Subsampling for point-to-point correspondence
+                                    </li>
+                                    <li>
+                                        Multiple scans alignment (5 meshes)
+                                    </li>
+                                    <li>
+                                        Iterative closes point (Point-to-plane) with optimization to minimize alignment error
+                                        E(R,t) = Σ||(R*pi + t - qi ).ni||^2
+                                    </li>
+								</ul>
+                          </div>
+                          
+                          <br><br><hr><br><br>
+
                           <div class="data">
                             
                             <h4 style="text-align: center;">FABRIK (C#/Unity/IK/Heatmaps/CG)</h4>
