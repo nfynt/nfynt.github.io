@@ -124,9 +124,9 @@
               </h4>
               <p>
                  		I am currently pursuing my Master of Research (MRes) in virtual reality at University College of London, and expected to 
-                        complete it by Sept 2020. My current research focus includes the processing of real time data and integrating it
-                        with immersive application for monitoring, collaboration and decision making. I am particularly interested into the acquisition and
-                        processing of 3D geometry from spatial data and mapping it with geographical information systems. Check demo videos on my youtube channel for more
+                        complete it by Sept 2020. My current research focus includes the processing of differential geometry, structure from motion and integrating them
+                        with immersive application for collaboration and visualization. I am particularly interested into the real-time surface reconstruction
+                        and cross-platform collaboration at geographical scale in AR and VR. Check demo videos on my youtube channel for more
                         recent works.
               </p>
               </p>
@@ -147,8 +147,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#contact">
-                             Collaborate for your next project
+                  <a href="https://www.youtube.com/playlist?list=PLgpAh7r0YO414dd6q3TpK0pBtKkDsy-_B">
+                             Project Videos
                   </a>
                 </li>
               </ul>
@@ -207,7 +207,7 @@
               <i class="icon-twitter"></i>
                 <div class="item-data">
                   <h3>
-                    <a href="https://www.youtube.com/playlist?list=PLgpAh7r0YO414dd6q3TpK0pBtKkDsy-_B" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCVvAwe3IzG7u2PqQUj_MS9A/videos" target="_blank">
                          Nfynt
                     </a>
                   </h3>
@@ -288,7 +288,7 @@
             <div class="meter emerald">
               <span style="width: 80%">
                 <span>
-                        3D geometry 
+                        Comp. geometry (libigl)
                 </span>
               </span>
             </div>
@@ -324,6 +324,7 @@
             <span class="label label-info">Image processing</span>
             <span class="label label-info">Computational Photography</span>
             <span class="label label-info">Acquisition and Processing of 3D geometry</span>
+            <span class="label label-info">Matlab</span>
             <span class="label label-info">WebRTC</span>
             <span class="label label-info">Mapbox SDK</span>
             <span class="label label-info">Git VCS</span>
@@ -340,6 +341,74 @@
       <div id="portfolio">
         <section class="clearfix">
                         <div class="project-div">
+
+                        <div class="data">
+                            
+                            <h4 style="text-align: center;">Laplace-Beltrami and Eigen analysis (C++/libigl/eigen/spectra/flann/glfw)</h4>
+                            
+                            <div class="image" style="height:530px; object-fit: contain; align:center">
+                               
+                                <table style="margin-left:10px">
+                                    <tr>
+                                        <td style="padding:10px;">
+                                            <img style="display:block;" width="100%"  src="image/laplace_beltrami/uni_mean.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/uni_gauss.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/non_uni_cot.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/e_10.png" />
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td style="padding:10px;">
+                                            <img style="display:block;" width="100%"  src="image/laplace_beltrami/e_30.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/e_60.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/sm_1.png" />
+                                        </td>
+                                        <td style="padding:10px">
+                                            <img style="display:block;" width="100%" src="image/laplace_beltrami/sm_2.png" />
+                                        </td>
+                                     </tr>
+                                </table>
+                            </div>
+
+
+
+                                <p style="text-align:left; font-family:calibri">
+                                Here I have used
+									<a href="https://github.com/nfynt/COMPM080-Tutorials-2020/tree/master/tutorials/1_coding_framework/cpp/3_travel/cw2" class="postLink" target="_blank">Laplace-Beltram</a>
+                  operator to perform curvature estimation, eigen analysis and smoothing of the mesh. Above you can see the results for following operations:
+								</p>
+                                <ul style="text-align:left; font-family:calibri;">
+									<li>
+										Uniform discretization for mean curvature
+									</li>
+                                    <li>
+                                        Uniform discretization for gauss curvature
+                                    </li>
+									<li>
+										Non-uniform cotan discretization
+									</li>
+                                    <li>
+                                        Eigen value analysis and fourier reconstruction for iteration - 10,30 and 60
+                                    </li>
+                                    <li>
+                                        Implicit laplacian mesh smoothing  
+                                        (I-λL)P(t+1)=P(t)
+                                    </li>
+								</ul>
+                          </div>
+                          
+                          <br><br><hr><br><br>
+
                         <div class="data">
                             
                             <h4 style="text-align: center;">ICP (C++/libigl/eigen/nanoflann/glfw)</h4>
