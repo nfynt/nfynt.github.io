@@ -20,11 +20,13 @@
 		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
 		<link rel="stylesheet" href="css/normalize.min.css">
+		<!--link rel="stylesheet" href="css/caraousel.css"-->
 		<link rel="stylesheet" href="css/main.css">
 		<!-- All script tags -->
 		<script>document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 		<script src="js/vendor/jquery.hashchange.min.js"></script>
 		<script src="js/vendor/jquery.easytabs.min.js"></script>
+		<!--script src="js/caraousel.js"></script-->
 		<script src="js/main.js"></script>
 	</head>
 	<!-- Start of Body Tag -->
@@ -107,18 +109,19 @@
 									MRes VR @ UCL
 								</h4>
 								<p>
-									I am currently pursuing my Master of Research (MRes) in virtual reality at University College of London, and expected to 
-									complete it by Sept 2020. My current research focus includes the processing of differential geometry, structure from motion and integrating them
-									with immersive application for collaboration and visualization. I am particularly interested in cross-platform collaboration using mixed reality and spatial understanding. 
+									I am currently pursuing my Master of Research (MRes) in virtual reality at University College London and expect to 
+									complete it by Sept 2020. My current research focus includes the development of novel mixed reality systems, visual SLAM,
+									and computer vision. I am particularly interested in the problem of spatial understanding and cross-platform collaboration using 
+									mixed reality. 
 									<br><br>
 									<h5> Research works </h5>
 									<ul>
 										<li> 
-										Real-time Collaboration between Mixed Reality Users in Geographical Environment. [<a href="https://github.com/nfynt/nfynt.github.io/blob/master/papers/VR_AR_Paper_ISMAR2020.pdf" target="_blank">Paper</a>] 
+										Real-time Collaboration between Augemented and Virtual Reality users in Geo-referenced environment. [<a href="pdf/papers/ismar_20.html" target="_blank">Paper</a>] 
 										</li>
 										<li> 
-										Fusion of GNSS measurement into VSLAM Bundle Adjustment process for geo-referenced positioning and heading. 
-										[WIP<!--a href="https://github.com/nfynt/nfynt.github.io/blob/master/papers/VR_AR_Paper_ISMAR2020.pdf" target="_blank">Paper</a-->] 
+										Fusion of GNSS measurement into VSLAM Bundle Adjustment process for geo-referenced positioning and attitude. [<a href="pdf/thesis.html" target="_blank">Report</a>]
+										[<a href="https://github.com/nfynt/openvslam_gps_fusion/tree/develop" target="_blank">Project</a>]
 										</li>
 									</ul>
 									<br><br>Check demo videos on my youtube channel for more recent works.
@@ -230,7 +233,7 @@
 								</span>
 							</div>
 							<div class="meter emerald">
-								<span style="width: 90%">
+								<span style="width: 95%">
 								<span>
 								C++
 								</span>
@@ -273,21 +276,21 @@
 							<div class="meter emerald">
 								<span style="width: 90%">
 								<span>
-								OpenCV (C++ &amp; python)
+								Computer vision (C++ &amp; python)
 								</span>
 								</span>
 							</div>
 							<div class="meter emerald">
 								<span style="width: 80%">
 								<span>
-								Comp. geometry (libigl)
+								Visual SLAM
 								</span>
 								</span>
 							</div>
 							<div class="meter emerald">
 								<span style="width: 80%">
 								<span>
-								Networking (PUN; ICE; NodeJS)
+								Networking (SFML, Photon; ICE)
 								</span>
 								</span>
 							</div>
@@ -331,9 +334,51 @@
 				<div id="portfolio">
 					<section class="clearfix">
 						<div class="project-div">
+						<!--div class="data">
+							<h4 style="text-align: center;">Using GNSS data for geo-referenced VSLAM (C++/OpenCV/G2O/DBoW2/OpenVSLAM/Eigen)</h4>							
+							<div class="image" style="height:530px; object-fit: contain; align:center">		
+							</div>
+							<p style="text-align:left; font-family:calibri"></p>
+						</div>
+						<br><br>
+						<hr>
+						<br><br-->
+
+						<div class="data">
+						<h4 style="text-align: center;">Using GNSS data for geo-referenced VSLAM (C++/OpenCV/G2O/DBoW2/OpenVSLAM/Eigen)</h4>
+														
+						<div class="image" style="height:270px; object-fit: contain; align:center">	
+						<table style="margin-left:10px">
+								<tr>
+									<td style="padding:10px;">
+										<img style="display:block;" width="100%"  src="image/gnssvslam/graph.png" />
+									</td>
+									<td style="padding:10px;">
+										<img style="display:block;" width="100%" src="image/gnssvslam/vslam.png" />
+									</td>
+								</tr>
+							</table>	
+						</div>
+							<p style="text-align:left; font-family:calibri">
+							 The fusion of GNSS measurements into the visual SLAM (VSLAM) system, to achieve accurate localization of 
+							 the sensor system on a geographical scale. This project proposes tightly coupled VSLAM system that fuses 
+							 the GNSS measurement in the graph-based global bundle adjustment to remove the scale ambiguity of the 
+							 monocular SLAM and correct the noisy GNSS measurements. The geo-localization of the robot and the 
+							 estimation of attitude in this manner eliminates the need for magnetometer and gyroscope, which are 
+							 very noisy and highly susceptible to environmental disturbances.
+							</p>
+						</div>
+
+
+						<br><br>
+						<hr>
+						<br><br>
+
+
 							<div class="data">
 								<h4 style="text-align: center;">Laplace-Beltrami and Eigen analysis (C++/libigl/eigen/spectra/flann/glfw)</h4>
 								<div class="image" style="height:530px; object-fit: contain; align:center">
+
 									<table style="margin-left:10px">
 										<tr>
 											<td style="padding:10px;">
@@ -670,7 +715,8 @@
 									<p>
 										<!--a href="https://github.com/nfynt/nfynt.github.io/blob/master/pdf/_aResume.pdf" target="_blank">Resume</a>
 										<b>|</b-->
-										<a href="https://github.com/nfynt/nfynt.github.io/blob/master/pdf/_aCurriculumVitae.pdf" target="_blank">CV</a>
+										<!--a href="https://github.com/nfynt/nfynt.github.io/blob/master/pdf/_aCurriculumVitae.pdf" target="_blank">CV</a-->
+										[<a href="pdf/my_cv.html" target="_blank">CV</a>] 
 									</p>
 								</div>
 							</div>
